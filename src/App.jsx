@@ -5,32 +5,48 @@ import {getRandom} from './utils/random'
 import QuoteBox from './Components/QuoteBox'
 import Button from './Components/Button'
 
-import Space1 from '../public/SpaceImg/Space1.jpg'
-import Space2 from '../public/SpaceImg/Space2.jpg'
-import Space3 from '../public/SpaceImg/Space3.jpg'
-import Space4 from '../public/SpaceImg/Space4.jpg'
-
-
+const bkgImages = [
+  {
+    "Space":'space1',
+    "planet": '../public/PlanetSvg/planeta1.svg'
+  },
+  {
+    "Space":'space2' ,
+    "planet": '../public/PlanetSvg/planeta2.svg',
+  },
+  {
+    "Space":'space4',
+    "planet": '../public/PlanetSvg/planeta3.svg' ,
+  },
+  {
+    "Space": 'space4'  ,
+    "planet": '../public/PlanetSvg/planeta4.svg',
+  },
+]
 function App() {
   
   //Lógica Random Phrase
   const [quote, setQuote] = useState(getRandom(dbQuotes))
-
+  const [bgImages, setBgIMages] = useState(getRandom(bkgImages))
   
 
   const handleChangeQuote = () => {
-    setQuote(getRandom(dbQuotes))
+    console.log('Hola');
+    //setQuote(getRandom(dbQuotes))
+    //setBgIMages(getRandom(bkgImages))
   }
 
   return (
     <>
-      <main style={{backgroundImage: `url(../public/SpaceImg/Space1.jpg)`}}>
+      <main className={bgImages.Space}>
         <h1 className='principal_title'>INFO GALAXY</h1>
-        <QuoteBox quote={quote} handleChangeQuote={handleChangeQuote} />
-        <Button handleChangeQuote={handleChangeQuote}/>
+        <QuoteBox quote={quote}/>
+        <Button/>
 
         <footer>
-          
+          <div>
+            <img src={bgImages.planet} alt="planeta" />
+          </div>
         </footer>
       </main>
     </>

@@ -23,10 +23,20 @@ main{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image: url(../public/SpaceImg/Space2.jpg);
   transition: all 2s;
 }
-
+.space1{
+  background-image: url(../public/SpaceImg/Space1.jpg);
+}
+.space2{
+  background-image: url(../public/SpaceImg/Space2.jpg);
+}
+.space3{
+  background-image: url(../public/SpaceImg/Space3.jpg);
+}
+.space4{
+  background-image: url(../public/SpaceImg/Space4.jpg);
+}
 .principal_title{
   color: white;
   font-size: 40px;
@@ -63,4 +73,15 @@ main{
   100%{
     opacity: .1;
   }
+}
+footer{
+  position: fixed;
+  bottom: -80px;
+  display: grid;
+  text-align: center;
+  
+}
+footer img{
+  opacity: .7;
+  transition: all 2s;
 }
