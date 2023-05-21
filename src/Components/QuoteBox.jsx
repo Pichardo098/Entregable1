@@ -1,9 +1,9 @@
-const QuoteBox = ({quote}) => {
+const QuoteBox = ({quote, bgInfo_Button}) => {
 
   return (
-    <p id="principalPhrase">
+    <p id="principalPhrase" className={bgInfo_Button}>
       {quote.phrase} <br />
-      <b>Fuente: {quote.author}</b>
+      <b className="font_phrase">Fuente: {quote.author}</b>
     </p>
   )
 }
