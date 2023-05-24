@@ -11,22 +11,22 @@ import Footer from './Components/Footer'
 const bkgImages = [
   {
     "Space":'space1',
-    "planet": '../public/PlanetSvg/planeta1.svg',
+    "planet": '/PlanetSvg/planeta1.svg',
     "bgInfo_Button": 'bgInfoButton1',
   },
   {
     "Space":'space2' ,
-    "planet": '../public/PlanetSvg/planeta2.svg',
+    "planet": '/PlanetSvg/planeta2.svg',
     "bgInfo_Button": 'bgInfoButton2',
   },
   {
     "Space":'space3',
-    "planet": '../public/PlanetSvg/planeta3.svg' ,
+    "planet": '/PlanetSvg/planeta3.svg' ,
     "bgInfo_Button": 'bgInfoButton3',
   },
   {
     "Space": 'space4'  ,
-    "planet": '../public/PlanetSvg/planeta4.svg',
+    "planet": '/PlanetSvg/planeta4.svg',
     "bgInfo_Button": 'bgInfoButton4',
   },
 ]
